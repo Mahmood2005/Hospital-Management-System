@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify the provided password against the hashed password
         if (password_verify($password, $hashedPassword)) {
             // Password is correct, redirect to the appropriate page
-            header('Location: ');
+            header('Location: ../Dashboard.php');
             exit();
         } else {
             // Password is incorrect
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // No user found with that patientID, redirect to signup
         echo 'No user found with that patientID';
-        // header('Location: Signup.php');
+        header('Location: Signup.php');
         exit();
     }
 

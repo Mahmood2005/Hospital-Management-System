@@ -1,8 +1,8 @@
 <html lang="en">
 <head>
-<script type="text/javascript" src="https://github.com/rubyeffect/easy_fill/tree/master/lib/easy_fill-0.0.1.min.js"></script>
-  <title>June-hospital Appointment Form</title>
+<title>June-hospital Appointment Form</title>
   <link rel="stylesheet" type="text/css" href="./Appointment.css" />
+  <link rel="shortcut icon" href="../hand-holding-heart-solid.svg" type="image/x-icon">
 </head>
 
 <body>

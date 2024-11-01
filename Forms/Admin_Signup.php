@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>June Hospital SignUp</title>
-  <link rel="stylesheet" href="./Form_style.css">
+  <title>June Hospital Admin SignUp</title>
+  <link rel="stylesheet" href=".//Form_style.css">
 </head>
 <body>
   <div class="wrapper">
@@ -48,17 +48,17 @@
         <input type="password" id="confirm_password" required>
         <label>Confirm password</label>
       </div>
-      <div class="forget">
+      <!-- <div class="forget">
         <label for="remember">
           <input type="checkbox" id="remember">
           <p>Remember me</p>
         </label>
         <a href="Forgot_Password.php">Forgot password?</a>
-      </div>
+      </div> -->
       <button type="submit" name="submit" onclick="SignupBtn()">Sign Up</button>
       <!-- <div class='message $message_type'>$php_errormsg</div> -->
       <div class="register">
-        <p>Already have an account? <a href="./Login.php">Login</a></p>
+        <p>Already have an account? <a href="./Admin_login.php">Login</a></p>
       </div>
     </form>
   </div>
@@ -101,7 +101,7 @@ function SignupBtn(){
     var myform = document.getElementById("Signup_Form");
 
     if (input1 === input2) {
-      myform.action = "Submit_signup.php";
+      myform.action = "Submit_admin_signup.php";
       myform.method = "post";
       myform.submit();
     }else {
